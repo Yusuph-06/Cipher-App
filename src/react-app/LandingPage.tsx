@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-function LandingPage({ onComplete }) {
+function LandingPage({ onComplete }: { onComplete: () => void }) {
     useEffect(() => {
         const timer = setTimeout(() => {
             onComplete();

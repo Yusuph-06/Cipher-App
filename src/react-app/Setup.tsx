@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-function ProgressBar({ progress }) {
+function ProgressBar({ progress }: { progress: number }) {
     return (
         <div style={{
             width: '100%',
@@ -19,7 +17,7 @@ function ProgressBar({ progress }) {
     );
 }
 
-function Setup({ onNext }) {
+function Setup({ onNext }: { onNext: () => void }) {
     return (
         <>
             <div className="min-h-screen bg-[#19291df5] flex gap-6 items-center justify-center p-4 font-mono text-zinc-300 shadow-lg shadow-[#13271cde]">
@@ -35,7 +33,7 @@ box-shadow: var(--shadow-sm);]">
                     </div>
 
                     <div className="flex flex-col gap-4 mb-8">
-                        <p className="text-[12px]  text-green-500 leading-tight font mb-[-12px]">Step 1</p>
+                        <p className="text-[12px]  text-green-500 leading-tight font -mb-3">Step 1</p>
                         <div className="flex flex-row w-full items-center text-zinc-300 gap-55">
                             <p>Identity</p>
                             <p>1/2</p>
